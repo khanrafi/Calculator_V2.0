@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Kg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                kg = Kg.getText().toString().trim();
+                kg= Kg.getText().toString().trim();
                 try {
                     Pound.setText((Double.parseDouble(kg)*2.20462)+"");
                 } catch (NumberFormatException e) {
